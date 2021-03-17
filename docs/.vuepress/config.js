@@ -1,5 +1,5 @@
 module.exports = {
-  title: '个人主页',
+  title: 'EllsomBlog',
   description: 'Personal Website',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/images/logo.jpg' }],
@@ -18,10 +18,10 @@ module.exports = {
     nav:[ // 导航栏配置
       {text: '前端基础', link: '/accumulate/' },
       {text: '算法题库', link: '/algorithm/'},
-      {text: '诗和远方', link: '/others/'},
-      {text: '微博', link: 'https://baidu.com'}      
+      {text: 'markdown', link: '/others/'},
+      {text: 'github', link: 'https://github.com/Ellsom1945'}      
     ],
     sidebar: 'auto', // 侧边栏配置
     sidebarDepth: 2
-  }
+}
 };
