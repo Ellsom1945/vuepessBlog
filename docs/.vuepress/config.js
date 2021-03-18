@@ -16,8 +16,8 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      {text: '前端基础', link: '/accumulate/' },
-      {text: '算法题库', link: '/algorithm/'},
+      {text: 'blog', link: '/blog/' },
+      {text: 'LeetCode笔记', link: '/leetcode/'},
       {text: 'markdown', link: '/others/'},
       {text: 'github', link: 'https://github.com/Ellsom1945'}      
     ],
