@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'EllsomBlog',
+	title: 'EllsomBlog',
   description: 'Personal Website',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/images/logo.jpg' }],
@@ -14,16 +14,14 @@ module.exports = {
   markdown: {
     lineNumbers: true // 代码块是否显示行号
   },
+  theme: 'reco',
   themeConfig: {
-    nav:[ // 导航栏配置
-
-      {text: 'Blog', link: '/blog/' },
+    nav: [
+	 {text: 'blog', link: '/blog/' },
       {text: 'LeetCode笔记', link: '/leetcode/'},
       {text: 'markdown', link: '/others/'},
-      {text: '开始你的个人博客', link: '../guide.html' },
-      {text: 'github', link: 'https://github.com/Ellsom1945'}      
-    ],
-    sidebar: 'auto', // 侧边栏配置
-    sidebarDepth: 2
+      {text: 'github', link: 'https://github.com/Ellsom1945'},      
+      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' }
+    ]
+  }
 }
-};
