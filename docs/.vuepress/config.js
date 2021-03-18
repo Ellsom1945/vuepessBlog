@@ -16,9 +16,11 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      {text: 'blog', link: '/blog/' },
+
+      {text: 'Blog', link: '/blog/' },
       {text: 'LeetCode笔记', link: '/leetcode/'},
       {text: 'markdown', link: '/others/'},
+      {text: '开始你的个人博客', link: '../guide.html' },
       {text: 'github', link: 'https://github.com/Ellsom1945'}      
     ],
     sidebar: 'auto', // 侧边栏配置
