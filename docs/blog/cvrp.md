@@ -1,6 +1,8 @@
 ---
 title: 关于CVRP问题的研究
 date: 2021-03-19 
+sidebar : auto
+sidebarDepth: 1
 categories:
 - tech 
 tags:
@@ -11,21 +13,21 @@ tags:
 
 ---
 
-# 项目准备阶段
+## 项目准备阶段
 
-## 准备相关论文，设计准备数据集，最终决定采用[CVRPLIB](http://vrp.atd-lab.inf.puc-rio.br/index.php/en/)上的标准数据集作为实验用数据。
+#### 准备相关论文，设计准备数据集，最终决定采用[CVRPLIB](http://vrp.atd-lab.inf.puc-rio.br/index.php/en/)上的标准数据集作为实验用数据。
 
 
 
-# 项目第一阶段
+## 项目第一阶段
 
-## 参考论文用各种元启发式算法求解CVRP问题
+#### 参考论文用各种元启发式算法求解CVRP问题
 
-### 采取的算法主要有：
+#### 采取的算法主要有：
 
-### [贪心](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/Greedy.py)、[遗传](https://github.com/Ellsom1945/route-project/blob/master/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B01)、[蚁群](https://github.com/Ellsom1945/route-project/blob/master/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B02)、[禁忌](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/TABU.py)、[粒子群](https://github.com/Ellsom1945/route-project/blob/master/%E7%B2%92%E5%AD%90%E7%BE%A4/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B02)
+#### [贪心](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/Greedy.py)、[遗传](https://github.com/Ellsom1945/route-project/blob/master/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B01)、[蚁群](https://github.com/Ellsom1945/route-project/blob/master/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B02)、[禁忌](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/TABU.py)、[粒子群](https://github.com/Ellsom1945/route-project/blob/master/%E7%B2%92%E5%AD%90%E7%BE%A4/%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B02)
 
-### 在实验前期出现的问题主要有：
+#### 验前期出现的问题主要有：
 
 * 遗传和粒子群算法由于参数过多，时间复杂度高，且收敛不稳定
 
@@ -33,19 +35,19 @@ tags:
 
 * 禁忌在前期的表现最优，其原因在于该算法的设计原理是找初始解的局部最优解，搜索域相较于整个解空间要小很多，其次选用贪心的结果作为初始解，部分问题的最优解特征与贪心的结果路径特征较为一致，导致在项目前期贪心+禁忌的组合效果一直最好
 
-### 第一阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83)
+#### 一阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83)
 
 
 
-# 项目第二阶段
+## 项目第二阶段
 
-## 项目第二阶段采取针对不同的算法进行优化，并加入一些其他种类的算法作为尝试
+#### 项目第二阶段采取针对不同的算法进行优化，并加入一些其他种类的算法作为尝试
 
-### 采取的算法主要有：
+#### 采取的算法主要有：
 
-### [改进粒子群](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/pso.py)、[遗传-退火](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/GASA.py)、[快速贪心](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/IMGR.py)、[改进蚁群](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/%E8%9A%81%E7%BE%A41.py)、[粒子群-禁忌](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/pso.py)、[Google-ortools](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/ort.py)
+#### [改进粒子群](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/pso.py)、[遗传-退火](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/GASA.py)、[快速贪心](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/IMGR.py)、[改进蚁群](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/%E8%9A%81%E7%BE%A41.py)、[粒子群-禁忌](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/pso.py)、[Google-ortools](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/ort.py)
 
-###  这阶段的各个算法的问题主要有：
+####  这阶段的各个算法的问题主要有：
 
 * 改进粒子群在时间复杂度和效果和上次比都有很大提升，但当数量级达到10<sup>3</sup>的时候，时间还是很不理想
 
@@ -59,30 +61,30 @@ tags:
 
 * ortools 是利用Google的开源框架[ortools](https://developers.google.cn/optimization/)实现的，ortools是一套约束问题、线性规划、图形算法工具包，这套算法其实已经足够优秀，**这套工具包已经足够优秀，在规模处于10<sup>3</sup>以内的问题基本都能输出最优解，而且时间足够优秀**，但由于算法都是利用的内置的足够优秀的模型求解该问题，而且由于底层互相引用过于复杂，导致我花了很长时间都未能成功了解该模型的求解流程，且我们的项目目标是构建超启发式算法，无奈只能放弃这个完美答案，**但如果要真正求解该类问题，这个工具包一定是我首选的方法**
 
-###  第二阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83)
+####  第二阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83)
 
 
 
-# 项目第三阶段
+## 项目第三阶段
 
 
-## 着手搭建超启发式算法框架
+#### 着手搭建超启发式算法框架
 
-### 主要利用的算法是：
+#### 主要利用的算法是：
 
-### [DQN神经网络](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/Hy_H.py)
+#### [DQN神经网络](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/Hy_H.py)
 
-### 该阶段主要问题有：
+#### 该阶段主要问题有：
 
 - 由于从未涉足过深度学习，神经网络等领域，要想从头搭建网络框架难度过大，于是又只能求助于各种深度学习开源框架，现阶段主流框架有[TensorFlow](https://github.com/tensorflow/tensorflow)，[keras](https://github.com/keras-team/keras)，[caffe](https://github.com/BVLC/caffe)，[Microsoft Cognitive Toolkit](https://github.com/Microsoft/CNTK)，[PyTorch](https://github.com/pytorch/pytorch)，[...](https://www.kdnuggets.com/2018/04/top-16-open-source-deep-learning-libraries.html)，鉴于各大框架的上手难度以及开源项目数量，最终选择TensorFlow来搭建DQN神经网络，**没错这个TenserFlow又是谷歌的团队开发的**
 
 - 接口也是一个问题，由于DQN网络的输入是固定的action+state格式，需要将CVRP模型的部分特征提取为state,这里主要参考[论文](https://wenku.baidu.com/view/37c332420b12a21614791711cc7931b764ce7b72.html)
 
-# 项目第四阶段
+## 项目第四阶段
 
 
-## 设计适合该超启发式算法框架的底层算子
+#### 设计适合该超启发式算法框架的底层算子
 
-### 主要算子参考[论文](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E9%A1%B9%E7%9B%AE%E8%AE%BA%E6%96%87)
+#### 主要算子参考[论文](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E9%A1%B9%E7%9B%AE%E8%AE%BA%E6%96%87)
 
-### 该阶段作为项目的收尾阶段，我总结一下整个项目和CVRP问题研究心得：
+#### 该阶段作为项目的收尾阶段，我总结一下整个项目和CVRP问题研究心得：

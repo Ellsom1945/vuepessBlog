@@ -1,8 +1,8 @@
 ---
 title: MarkDown参考文档
 date: 2021-03-15
-sidebar: 'auto'
-sidebarDepth: 3
+sidebar : auto
+sidebarDepth: 2
 tags:
  - markdown
 ---
