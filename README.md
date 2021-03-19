@@ -1,4 +1,14 @@
-# VuePress+github.io搭建个人博客
+---
+title: VuePress+github.io搭建个人博客
+date: 2021-03-14
+categories:
+ - tech
+tags:
+ -  vuepress
+ -  git
+---
+
+
 
 ### 步骤一：
 
