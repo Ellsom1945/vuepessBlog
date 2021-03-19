@@ -1,5 +1,6 @@
 module.exports = {
     title: 'EllsomBlog',
+    author: 'ellsom',
     description: 'Personal Website',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
         ['link', {rel: 'icon', href: '/images/logo.jpg'}],
@@ -32,12 +33,12 @@ module.exports = {
                     {text: '文学', link: '/categories/literature/'},
                     {text: '哲学', link: '/categories/philo/'},
                     {text: '杂谈', link: '/categories/whatever/'}
-                ]
+                ],icon:'reco-document'
             },
-            {text: 'LeetCode笔记', link: '/categories/leetcode/'},
+            {text: 'leetcode笔记', link: '/categories/leetcode/'},
             {text: 'markdown', link: '/blog/mdref.md'},
-            {text: 'github', link: 'https://github.com/Ellsom1945'},
-            {text: 'TimeLine', link: '/timeline/', icon: 'reco-date'},
+            {text: 'github', link: 'https://github.com/Ellsom1945',icon:'reco-github'},
+            {text: 'timeline', link: '/timeline/', icon: 'reco-date'},
         ]
-    }
+}
 }
