@@ -1,10 +1,19 @@
+---
+title: MarkDown参考文档
+date: '2021-03-15 08:00:00'
+sidebar: 'auto'
+sidebarDepth: 3
+tags:
+ - markdown
+publish: true
+---
 # Markdown For Typora
 
 ## Overview
 
 **Markdown** is created by [Daring Fireball](http://daringfireball.net/); the original guideline is [here](http://daringfireball.net/projects/markdown/syntax). Its syntax, however, varies between different parsers or editors. **Typora** is using [GitHub Flavored Markdown][GFM].
 
-[toc]
+
 
 ## Block Elements
 

@@ -16,6 +16,8 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
+    authorAvatar: '/images/logo.jpg',
+    type:'blog',
     nav: [
 	 {text: 'blog', link: '/blog/' },
       {text: 'LeetCode笔记', link: '/leetcode/'},
