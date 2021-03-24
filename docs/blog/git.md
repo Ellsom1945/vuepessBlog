@@ -1,8 +1,7 @@
 ---
 title: git的一些tips
 date: 2021-03-21
-sidebar : auto
-sidebarDepth: 2
+sidebar : false
 categories:
  - tech
 tags:

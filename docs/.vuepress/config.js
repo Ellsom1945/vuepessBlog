@@ -1,7 +1,7 @@
 module.exports = {
     title: 'EllsomBlog',
     author: 'ellsom',
-    description: 'Personal Website',
+    description: 'SURVIVE！',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
         ['link', {rel: 'icon', href: '/images/logo.jpg'}],
         ['link', {rel: 'manifest', href: '/images/logo.jpg'}],
