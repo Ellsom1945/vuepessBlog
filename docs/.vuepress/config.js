@@ -32,11 +32,11 @@ module.exports = {
                     {text: '技术', link: '/categories/tech/'},
                     {text: '文学', link: '/categories/literature/'},
                     {text: '哲学', link: '/categories/philo/'},
-                    {text: '杂谈', link: '/categories/whatever/'}
+                    {text: '杂谈', link: '/categories/else/'}
                 ],icon:'reco-document'
             },
-            {text: 'leetcode笔记', link: '/categories/leetcode/'},
-            {text: 'markdown', link: '/blog/mdref.md'},
+            {text: 'leetcode笔记', link: '/categories/leetcode/', icon: 'reco-blog'},
+            {text: 'markdown', link: '/blog/mdref.md', icon: 'reco-api'},
             {text: 'github', link: 'https://github.com/Ellsom1945',icon:'reco-github'},
             {text: 'timeline', link: '/timeline/', icon: 'reco-date'},
         ]
