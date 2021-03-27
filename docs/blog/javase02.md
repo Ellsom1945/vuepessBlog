@@ -17,7 +17,7 @@ tags:
 
 - java8默认是通过和当前线程有关的一个随机数+三个确定值，运用Marsaglia’s xorshift scheme随机数算法得到的一个随机数
 
-  ```java
+  ```c
   static inline intptr_t get_next_hash(Thread * Self, oop obj) {
   intptr_t value = 0 ;
   if (hashCode == 0) {
@@ -31,11 +31,9 @@ tags:
   } else
   if (hashCode == 2) {
      value = 1 ;            // 返回固定的1
-} else
-  if (hashCode == 3) {
+  } else if (hashCode == 3) {
      value = ++GVars.hcSequence ;  // 返回一个自增序列的当前值
-  } else
-  if (hashCode == 4) {
+  } else if (hashCode == 4) {
      value = cast_from_oop<intptr_t>(obj) ;  // 对象地址
   } else {
      // 通过和当前线程有关的一个随机数+三个确定值
@@ -49,12 +47,12 @@ tags:
      Self->_hashStateW = v ;
      value = v ;
   }
-
   value &= markOopDesc::hash_mask;
   if (value == 0) value = 0xBAD ;
   assert (value != markOopDesc::no_hash, "invariant") ;
   TEVENT (hashCode: GENERATE) ;
   return value;
-}
-
+  }
+  
   ```
+
