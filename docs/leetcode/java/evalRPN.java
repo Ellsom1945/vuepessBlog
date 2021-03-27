@@ -1,6 +1,5 @@
 import java.net.CookiePolicy;
 import java.util.Stack;
-
 public class evalRPN {
 
     public int evalRPN(String[] tokens) {
